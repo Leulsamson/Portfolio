@@ -7,20 +7,19 @@
     It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.
     <br />
     <strong>Site URL / Demo » </strong>
-    <a href="https://hashirshoaeb.github.io/portfolio"> hashirshoaeb.github.io/portfolio</a>
+    <a href="">Your portfolio URL</a>
     <br />
     <br />
-    <a href="https://hashirshoaeb.com">About Me</a>
+    <a href="">About Me</a>
     ·
-    <a href="https://github.com/hashirshoaeb/portfolio/issues">Report Bug</a>
+    <a href="">Report Bug</a>
     ·
-    <a href="https://github.com/hashirshoaeb/portfolio/issues">Request Feature</a>
+    <a href="">Request Feature</a>
   </p>
 </p>
 
-[![GitHub forks](https://img.shields.io/github/forks/hashirshoaeb/portfolio?style=for-the-badge)](https://github.com/hashirshoaeb/portfolio/network)
-[![GitHub license](https://img.shields.io/github/license/hashirshoaeb/portfolio?style=for-the-badge)](https://github.com/hashirshoaeb/portfolio/blob/master/LICENSE)
-[![Twitter Follow](https://img.shields.io/twitter/follow/hashirshoaeb?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/hashirshoaeb)
+[![GitHub forks](https://img.shields.io/badge/GitHub-forks-lightgrey?style=for-the-badge)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)]()
 [![Node Version](https://img.shields.io/static/v1?label=Node&message=16.16.0&color=026e00&style=for-the-badge)](https://nodejs.org)
 [![npm Version](https://img.shields.io/static/v1?label=npm&message=8.11.0&color=cb0000&style=for-the-badge)](https://nodejs.org)
 
@@ -71,7 +70,7 @@ I know one template doesn't fulfill everyone's needs. So I'll try adding more fe
 <!-- GETTING STARTED -->
 # Getting Started
 
-Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below. Please feel free to reach out to me by filing an [issue](https://github.com/hashirshoaeb/portfolio/issues) or emailing me at hashirshoaeb@gmail.com for help configuring your project.
+Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below. Contact details will be added after deployment.
 
 ## Prerequisites
 
@@ -84,7 +83,7 @@ You should have [Nodejs](https://nodejs.org/en/) and [Git](https://git-scm.com/d
       git clone https://github.com/<your-username>/portfolio.git
     ``` 
 
-2. Edit the [config/config.js](https://github.com/hashirshoaeb/portfolio/blob/main/config/config.js) file. Replace [config/profile.png](https://github.com/hashirshoaeb/portfolio/blob/main/config/profile.png) with your image. 
+2. Edit the [config/config.js](config/config.js) file. Replace [config/profile.png](config/profile.png) with your image.
     >Note: You need to rename your image file as `profile.png`.
 
 3. Run following scripts in terminal/command prompt to install dependencies.
@@ -120,14 +119,14 @@ Create a new repository with your username as `<your-username>.github.io`. And l
 
 Your site will be available at `https://<your-username>.github.io`
 
->Note: You need to replace `<your-username>` with your username. To add CNAME for custom domain, see [scripts/cname.js](https://github.com/hashirshoaeb/portfolio/blob/main/scripts/cname.js)
+>Note: You need to replace `<your-username>` with your username. To add CNAME for custom domain, see [scripts/cname.js](scripts/cname.js)
 
 # Support my work
 
 If you found this project valuable, please consider giving it a ⭐️ on GitHub. Your support keeps me motivated! If you'd like to further support my work, you can buy me a book. Thank you for your generosity!
 
 <div>
-  <a href="https://www.buymeacoffee.com/hashirshoaeb"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a book&emoji=📖&slug=hashirshoaeb&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+  <a href=""><img src="https://img.buymeacoffee.com/button-api/?text=Support my work&emoji=✨&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
  </div>
 
 <!-- CONTRIBUTING -->
@@ -146,4 +145,4 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 # License
 
-Distributed under the `MIT` License. See [LICENSE](https://github.com/hashirshoaeb/portfolio/blob/main/LICENSE) for more information.
+Distributed under the `MIT` License. See [LICENSE](LICENSE) for more information.
