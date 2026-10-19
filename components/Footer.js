@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link'
 
 export const Contact = ({ title, description, buttons }) => {
@@ -13,12 +14,14 @@ export const Contact = ({ title, description, buttons }) => {
 							(value.isPrimary) ?
 								<Link key={index} href={value.link}>
 									<a className="btn btn-primary my-1 mx-3">
+										{value.icon && <FontAwesomeIcon icon={value.icon} className="me-2" aria-hidden="true" />}
 										{value.title}
 									</a>
 								</Link>
 								:
 								<Link key={index} href={value.link}>
 									<a className="btn btn-outline-primary my-1 mx-3">
+										{value.icon && <FontAwesomeIcon icon={value.icon} className="me-2" aria-hidden="true" />}
 										{value.title}
 									</a>
 								</Link>
@@ -30,20 +33,30 @@ export const Contact = ({ title, description, buttons }) => {
 	);
 }
 
-export const Footer = () => {
+export const Footer = ({ links = [] }) => {
 	return (
-		<footer className="bg-secondary text-center py-2 px-5">
-			<div className="container text-muted">
-				<small>&copy; {new Date().getFullYear()} {" "}
-					<Link href="">
-						<a>Leul Samson</a>
-					</Link>
-					. Open sourced with love under {" "}
-					<Link href="">
-						<a>MIT</a>
-					</Link>
-					{" "} License
-				</small>
+		<footer className="site-footer py-5 px-4">
+			<div className="container">
+				<div className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+					<div>
+						<p className="footer-kicker mb-2">LET&apos;S CONNECT</p>
+						<h2 className="text-white fw-bold mb-2">Contact Me</h2>
+						<small className="footer-muted">Leul Samson · Software Engineering Graduate</small>
+					</div>
+					<div className="footer-links" aria-label="Contact links">
+						{links.map((value) => (
+							<Link key={value.title} href={value.link}>
+								<a className="footer-link" target="_blank" rel="noreferrer">
+									{value.icon && <FontAwesomeIcon icon={value.icon} aria-hidden="true" />}
+									<span>{value.title}</span>
+								</a>
+							</Link>
+						))}
+					</div>
+				</div>
+				<div className="footer-bottom mt-4 pt-3">
+					<small>&copy; {new Date().getFullYear()} Leul Samson. Built with care.</small>
+				</div>
 			</div>
 		</footer>
 	);

@@ -25,17 +25,17 @@ export const Skills = ({ title, cards }) => {
 
 export const Projects = ({ title, cards }) => {
 	return (
-		<div id="projects" className="bg-primary py-5 px-5">
-			<div className="container">
+		<div id="projects" className="projects-section py-5 px-3 px-md-5">
+			<div className="container-fluid projects-container">
 				<h1 className="text-light fw-bold">Projects</h1>
-				<div className="d-flex flex-row flex-wrap justify-content-center">
+				<div className="projects-grid">
 					{cards.map((value, index) => (
 						<Card
 							key={index}
 							title={value.title}
 							description={value.description}
-							image={value.image}
 							images={value.images}
+							image={value.image}
 							github={value.github}
 							demo={value.demo} />
 					))}
@@ -50,7 +50,7 @@ export const Projects = ({ title, cards }) => {
 
 export const Card = ({ title, description, image, images, github, demo }) => {
 	return (
-		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
+		<div className="card py-3 px-3 my-3 card-work project-card">
 			{images ? (
 				<div className="project-image-grid mb-3">
 					{images.map((projectImage, index) => (

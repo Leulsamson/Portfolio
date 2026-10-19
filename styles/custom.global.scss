@@ -18,9 +18,10 @@
 // $inverted-font: #FFFFFF;
 
 // bootstrap overrides 
-$primary: #365B6D;
+$primary: #111315;
 $secondary: #F7F7F7;
 $light: #FFFFFF;
+$accent: #b8f34a;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 $font-family-sans-serif: -apple-system, 'Barlow', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -137,7 +138,8 @@ a {
 }
 
 .card-work:hover {
-  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  box-shadow: 0 0 24px rgba(184, 243, 74, .18);
+  transform: translateY(-4px);
 }
 
 .card-project-image {
@@ -155,7 +157,106 @@ a {
 }
 
 .project-image-grid .card-project-image {
-  height: 110px;
+  height: 125px;
+}
+
+.projects-section {
+  background:
+    radial-gradient(circle at 85% 10%, rgba(184, 243, 74, .14), transparent 28rem),
+    #0b0d0e;
+}
+
+.projects-section h1 {
+  color: $accent !important;
+}
+
+.projects-container {
+  max-width: 1440px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  width: 100%;
+  min-height: 100%;
+  border: 1px solid rgba(184, 243, 74, .14);
+  background: #171a1b;
+  color: $light;
+}
+
+.project-card h4 {
+  color: $accent !important;
+}
+
+.project-card p {
+  color: #d2d8d1 !important;
+}
+
+.project-card .btn-primary {
+  background: $accent;
+  border-color: $accent;
+  color: #111315;
+}
+
+.project-card .btn-outline-primary {
+  border-color: rgba(184, 243, 74, .7);
+  color: $accent;
+}
+
+.project-card .btn-outline-primary:hover {
+  background: $accent;
+  color: #111315;
+}
+
+.site-footer {
+  background: #050606;
+  color: #aeb7ad;
+  border-top: 1px solid rgba(184, 243, 74, .2);
+}
+
+.footer-kicker {
+  color: $accent;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.footer-muted {
+  color: #879187;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  min-height: 44px;
+  padding: .6rem .8rem;
+  border: 1px solid #2a332a;
+  border-radius: 999px;
+  color: #e9f0e8;
+  font-size: .9rem;
+  transition: background-color .2s, border-color .2s, color .2s;
+}
+
+.footer-link:hover {
+  background: $accent;
+  border-color: $accent;
+  color: #111315;
+}
+
+.footer-bottom {
+  border-top: 1px solid #202620;
+  color: #687268;
 }
 
 .card-image {

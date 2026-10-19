@@ -1,5 +1,7 @@
 
 import profile from './profile.png';
+import { faGithub, faLinkedin, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: "Leul",
@@ -71,27 +73,25 @@ export const projects = {
     {
       title: "Licence Management System",
       description: "A full-stack licence management application for organizing licence records and workflows.",
-      image: "https://i.postimg.cc/pVY5JrLM/chrome-ZJIMhmch3f.png",
+      images: ["/licence-mng-1.png", "/licence-mng-2.png", "/licence-mng-3.png"],
       github: "https://github.com/Leulsamson/licence-management-system",
       demo: "https://licence-management-system-one.vercel.app",
     },
     {
       title: "Hospital Management System",
       description: "A web-based system for organizing hospital information and day-to-day management workflows.",
-      image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80",
+      image: "/hms.png",
       github: "https://github.com/Leulsamson/hospital-management-system",
       demo: "https://hospital-management-system-snowy-nu.vercel.app",
     },
     {
       title: "Portfolio",
       description: "This responsive portfolio website for presenting my work, background, and contact links.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
       github: "https://github.com/Leulsamson/Portfolio",
     },
     {
       title: "Leulsamson GitHub Profile",
       description: "Profile configuration and documentation for my GitHub presence.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
       github: "https://github.com/Leulsamson/Leulsamson",
     },
     {
@@ -103,7 +103,7 @@ export const projects = {
     {
       title: "Municipality Land Administration System",
       description: "A land administration system for managing municipal records and organization workflows.",
-      image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80",
+      images: ["/municipality-1.png", "/municipality-2.png", "/municipality-3.png"],
       github: "https://github.com/Leulsamson/municipality-land-administration-system-for-organizations",
     },
   ],
@@ -116,26 +116,31 @@ export const contact = {
     {
       title: "Email Me",
       link: "mailto:Leuls4345@gmail.com",
+      icon: faEnvelope,
       isPrimary: true,
     },
     {
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/leul-samson-6373b8319/",
+      icon: faLinkedin,
       isPrimary: false,
     },
     {
       title: "X",
       link: "https://x.com/LeulSamson26569",
+      icon: faTwitter,
       isPrimary: false,
     },
     {
       title: "Telegram",
       link: "https://t.me/Leulsamsss",
+      icon: faTelegram,
       isPrimary: false,
     },
     {
       title: "Call Me",
       link: "tel:+251922774372",
+      icon: faPhone,
       isPrimary: false,
     },
   ]
@@ -157,26 +162,32 @@ export const links = {
     {
       title: "My GitHub",
       link: "https://github.com/Leulsamson/",
+      icon: faGithub,
     },
     {
       title: "Email Me",
       link: "mailto:Leuls4345@gmail.com",
+      icon: faEnvelope,
     },
     {
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/leul-samson-6373b8319/",
+      icon: faLinkedin,
     },
     {
       title: "X",
       link: "https://x.com/LeulSamson26569",
+      icon: faTwitter,
     },
     {
       title: "Telegram",
       link: "https://t.me/Leulsamsss",
+      icon: faTelegram,
     },
     {
       title: "Call Me",
       link: "tel:+251922774372",
+      icon: faPhone,
     },
   ]
 }
