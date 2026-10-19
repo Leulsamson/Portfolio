@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export const Nav = ({ title, links }) => {
 
@@ -56,11 +58,12 @@ export const Nav = ({ title, links }) => {
           </div>
           <button
             type="button"
-            className="theme-toggle"
+            className="theme-toggle ms-sm-auto"
             onClick={toggleTheme}
             aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
-            {isDarkMode ? 'Light mode' : 'Dark mode'}
+            <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} aria-hidden="true" />
           </button>
         </div>
       </div>
