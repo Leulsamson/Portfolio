@@ -424,6 +424,20 @@ a {
   color: #111315 !important;
 }
 
+.links-content {
+  position: relative;
+}
+
+.links-theme-control {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 40px;
+}
+
+.links-theme-control .theme-toggle {
+  margin: 0;
+}
+
 .dark-mode {
   background: #101412;
   color: #edf2eb;
