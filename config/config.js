@@ -111,12 +111,32 @@ export const projects = {
 
 export const contact = {
   title: "Get in touch",
-  description: "I am open to conversations about software engineering, collaboration, and new opportunities. Find me on GitHub to connect.",
+  description: "I am open to conversations about software engineering, collaboration, and new opportunities.",
   buttons: [
     {
-      title: "GitHub Profile",
-      link: "https://github.com/Leulsamson",
+      title: "Email Me",
+      link: "mailto:Leuls4345@gmail.com",
       isPrimary: true,
+    },
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/leul-samson-6373b8319/",
+      isPrimary: false,
+    },
+    {
+      title: "X",
+      link: "https://x.com/LeulSamson26569",
+      isPrimary: false,
+    },
+    {
+      title: "Telegram",
+      link: "https://t.me/Leulsamsss",
+      isPrimary: false,
+    },
+    {
+      title: "Call Me",
+      link: "tel:+251922774372",
+      isPrimary: false,
     },
   ]
 }
@@ -135,12 +155,28 @@ export const links = {
   description: "Software Engineering Graduate | Full-stack Developer",
   cards: [
     {
-      title: "My website",
-      link: "https://leulsamson.github.io/portfolio/",
-    },
-    {
       title: "My GitHub",
       link: "https://github.com/Leulsamson/",
+    },
+    {
+      title: "Email Me",
+      link: "mailto:Leuls4345@gmail.com",
+    },
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/leul-samson-6373b8319/",
+    },
+    {
+      title: "X",
+      link: "https://x.com/LeulSamson26569",
+    },
+    {
+      title: "Telegram",
+      link: "https://t.me/Leulsamsss",
+    },
+    {
+      title: "Call Me",
+      link: "tel:+251922774372",
     },
   ]
 }
