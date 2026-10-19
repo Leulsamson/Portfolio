@@ -256,6 +256,7 @@ a {
 
 .skill-card:hover {
   transform: translateY(-5px);
+  border-color: #111315;
   box-shadow: 0 18px 38px rgba(17, 19, 21, .1);
 }
 
@@ -328,6 +329,7 @@ a {
 
 .project-card:hover {
   transform: translateY(-5px);
+  border-color: #111315;
   box-shadow: 0 18px 38px rgba(17, 19, 21, .1);
 }
 
@@ -341,20 +343,21 @@ a {
   line-height: 1.65;
 }
 
-.project-card .btn-primary {
-  background: $accent;
-  border-color: $accent;
-  color: #111315;
-}
-
+.project-card .btn-primary,
 .project-card .btn-outline-primary {
-  border-color: rgba(184, 243, 74, .7);
-  color: $primary;
+  background: #ffffff;
+  border: 1px solid #111315;
+  color: #111315;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
 }
 
-.project-card .btn-outline-primary:hover {
-  background: $accent;
-  color: #111315;
+.project-card .btn-primary:hover,
+.project-card .btn-primary:focus,
+.project-card .btn-outline-primary:hover,
+.project-card .btn-outline-primary:focus {
+  background: #111315;
+  border-color: #111315;
+  color: #ffffff;
 }
 
 .site-footer {
@@ -458,6 +461,11 @@ a {
   background: #182019;
 }
 
+.dark-mode .skill-card:hover,
+.dark-mode .project-card:hover {
+  border-color: #edf2eb;
+}
+
 .dark-mode .skills-section,
 .dark-mode .projects-section {
   background: #111712;
@@ -480,8 +488,20 @@ a {
   color: #b9c5b8 !important;
 }
 
+.dark-mode .project-card .btn-primary,
 .dark-mode .project-card .btn-outline-primary {
-  color: #edf2eb;
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #111315;
+}
+
+.dark-mode .project-card .btn-primary:hover,
+.dark-mode .project-card .btn-primary:focus,
+.dark-mode .project-card .btn-outline-primary:hover,
+.dark-mode .project-card .btn-outline-primary:focus {
+  background: #111315;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .card-image {
