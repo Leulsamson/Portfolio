@@ -95,11 +95,6 @@ export const projects = {
       demo: "https://hospital-management-system-snowy-nu.vercel.app",
     },
     {
-      title: "Portfolio",
-      description: "This responsive portfolio website for presenting my work, background, and contact links.",
-      github: "https://github.com/Leulsamson/Portfolio",
-    },
-    {
       title: "Leulsamson GitHub Profile",
       description: "Profile configuration and documentation for my GitHub presence.",
       github: "https://github.com/Leulsamson/Leulsamson",
