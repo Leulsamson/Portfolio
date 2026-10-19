@@ -43,7 +43,7 @@ export const intro = {
 }
 
 export const about = {
-  title: "Who I am",
+  title: "Profile",
   description: [
     "I am Leul Samson, a Software Engineer with a strong interest in technology and software development. I am highly motivated, hardworking, and focused on building useful software that addresses real-world needs.",
     "I earned a BSc. in Software Engineering from Injibara University in 2026 with a CGPA of 3.65 and an exit exam result of 86.25%. My education strengthened my foundation in software design, development, databases, and problem solving.",
@@ -52,7 +52,7 @@ export const about = {
 }
 
 export const work = {
-  title: "What I do",
+  title: "Skills",
   cards: [
     {
       title: "Full-Stack Web Development",

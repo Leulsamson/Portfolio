@@ -43,7 +43,6 @@ export const About = ({ title, description }) => {
 	return (
 		<div id="about" className="about-section py-5 px-5">
 			<div className="container">
-				<p className="section-label mb-2">Profile</p>
 				<h1 className="text-primary fw-bold">{title}</h1>
 				<div className="about-content px-sm-5">
 					{description.map((value, index) => (
