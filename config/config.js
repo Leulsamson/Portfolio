@@ -71,33 +71,27 @@ export const projects = {
     {
       title: "Licence Management System",
       description: "A full-stack licence management application for organizing licence records and workflows.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/licence-management-system",
+      image: "https://i.postimg.cc/pVY5JrLM/chrome-ZJIMhmch3f.png",
       github: "https://github.com/Leulsamson/licence-management-system",
       demo: "https://licence-management-system-one.vercel.app",
     },
     {
-      title: "News Feed Provider",
-      description: "A project for collecting and providing news content through a focused application experience.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/News-Feed-Provider",
-      github: "https://github.com/Leulsamson/News-Feed-Provider",
-    },
-    {
       title: "Hospital Management System",
       description: "A web-based system for organizing hospital information and day-to-day management workflows.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/hospital-management-system",
+      image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=800&q=80",
       github: "https://github.com/Leulsamson/hospital-management-system",
       demo: "https://hospital-management-system-snowy-nu.vercel.app",
     },
     {
       title: "Portfolio",
       description: "This responsive portfolio website for presenting my work, background, and contact links.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/Portfolio",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
       github: "https://github.com/Leulsamson/Portfolio",
     },
     {
       title: "Leulsamson GitHub Profile",
       description: "Profile configuration and documentation for my GitHub presence.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/Leulsamson",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
       github: "https://github.com/Leulsamson/Leulsamson",
     },
     {
@@ -109,14 +103,8 @@ export const projects = {
     {
       title: "Municipality Land Administration System",
       description: "A land administration system for managing municipal records and organization workflows.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/municipality-land-administration-system-for-organizations",
+      image: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80",
       github: "https://github.com/Leulsamson/municipality-land-administration-system-for-organizations",
-    },
-    {
-      title: "Municipality Land Admin",
-      description: "A Visual Basic land administration system focused on municipal data management.",
-      image: "https://opengraph.githubassets.com/1/Leulsamson/municipality-land-admin",
-      github: "https://github.com/Leulsamson/municipality-land-admin",
     },
   ],
 }
