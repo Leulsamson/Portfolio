@@ -55,13 +55,23 @@ export const work = {
   title: "What I do",
   cards: [
     {
-      title: "Mobile App Development",
-      description: "I build mobile experiences with a focus on useful, approachable interfaces.",
+      title: "Full-Stack Web Development",
+      description: "I build responsive applications with React, Next.js, TypeScript, Node.js, and Express, from polished interfaces to dependable APIs.",
       icons: null,
     },
     {
-      title: "Web Development",
-      description: "I create responsive web applications with modern JavaScript tooling.",
+      title: "Backend & Database Systems",
+      description: "I design practical backend systems with PostgreSQL, MySQL, Prisma, SQL Server, authentication, validation, and maintainable data models.",
+      icons: null,
+    },
+    {
+      title: "AI & Machine Learning",
+      description: "I explore machine-learning solutions for real-world problems and continue developing my expertise in AI, data-driven tools, and research.",
+      icons: null,
+    },
+    {
+      title: "Deployment & Software Delivery",
+      description: "I use Git, Docker, and cloud deployment workflows to ship reliable projects and turn ideas into accessible software.",
       icons: null,
     }
   ],

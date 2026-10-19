@@ -35,7 +35,7 @@ export const Contact = ({ title, description, buttons }) => {
 
 export const Footer = ({ links = [] }) => {
 	return (
-		<footer className="site-footer py-5 px-4">
+		<footer id="contact" className="site-footer py-5 px-4">
 			<div className="container">
 				<div className="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
 					<div>
