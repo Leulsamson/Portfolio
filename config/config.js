@@ -83,7 +83,7 @@ export const projects = {
     {
       title: "Licence Management System",
       description: "A full-stack licence management application for organizing licence records and workflows.",
-      images: ["/licence-mng-1.png", "/licence-mng-2.png", "/licence-mng-3.png"],
+      image: "/licence-mng-1.png",
       github: "https://github.com/Leulsamson/licence-management-system",
       demo: "https://licence-management-system-one.vercel.app",
     },
@@ -102,13 +102,13 @@ export const projects = {
     {
       title: "Utility Damage Reporting System",
       description: "A reporting system designed to help track and manage utility damage cases.",
-      images: ["/smart.jpg", "/smart1.jpg"],
+      image: "/smart.jpg",
       github: "https://github.com/Leulsamson/utility-damage-reporting-system",
     },
     {
       title: "Municipality Land Administration System",
       description: "A land administration system for managing municipal records and organization workflows.",
-      images: ["/municipality-1.png", "/municipality-2.png", "/municipality-3.png"],
+      image: "/municipality-1.png",
       github: "https://github.com/Leulsamson/municipality-land-administration-system-for-organizations",
     },
   ],
