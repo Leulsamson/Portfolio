@@ -1,5 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link'
 
 export const Skills = ({ title, cards }) => {
@@ -32,7 +34,9 @@ export const Projects = ({ title, cards }) => {
 							key={index}
 							title={value.title}
 							description={value.description}
-							icons={value.icons} />
+							image={value.image}
+							github={value.github}
+							demo={value.demo} />
 					))}
 				</div>
 				{/* <div className="text-center">
@@ -43,19 +47,29 @@ export const Projects = ({ title, cards }) => {
 	);
 }
 
-export const Card = ({ title, description, icons }) => {
+export const Card = ({ title, description, image, github, demo }) => {
 	return (
 		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
+			{image && (
+				<img className="card-project-image mb-3" src={image} alt={`${title} project preview`} loading="lazy" />
+			)}
 			<h4 className="text-primary">{title}</h4>
 			<p className="text-dark">{description}</p>
-			<div className="text-end">
-				{icons && icons.map((value, index) => (
-					<Link key={index} href={value.link}>
-						<a target="_blank" rel="noreferrer">
-							<FontAwesomeIcon className="icon-style mx-1" icon={value.icon} size="2x" />
+			<div className="d-flex flex-wrap gap-2 mt-auto">
+				{demo && (
+					<Link href={demo}>
+						<a className="btn btn-primary btn-sm" target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faArrowUpRightFromSquare} className="me-1" /> Live demo
 						</a>
 					</Link>
-				))}
+				)}
+				{github && (
+					<Link href={github}>
+						<a className="btn btn-outline-primary btn-sm" target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faGithub} className="me-1" /> GitHub
+						</a>
+					</Link>
+				)}
 			</div>
 		</div>
 	);

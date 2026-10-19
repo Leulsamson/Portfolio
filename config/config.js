@@ -1,10 +1,8 @@
 
 import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Leuls",
+  name: "Leul",
   links: [
     {
       title: "About",
@@ -22,15 +20,11 @@ export const navigation = {
       title: "Links",
       link: "/links",
     },
-    {
-      title: "Blog",
-      link: "",
-    }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Leuls",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hey, I'm Leul",
+  description: "A software engineering graduate building full-stack web applications and practical digital tools.",
   image: profile.src,
   buttons: [
     {
@@ -40,7 +34,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "",
+      link: "/Leul_Samson_CV.pdf",
       isPrimary: false,
     },
   ],
@@ -49,9 +43,9 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I am a software engineering graduate passionate about full-stack development and modern web technologies. I enjoy turning real-world problems into reliable, approachable software.",
+    "My work spans web applications, management systems, data-driven tools, and developer-focused projects. I value clear interfaces, maintainable code, and learning through hands-on building.",
+    "When I am not coding, I enjoy continuing my learning journey and exploring ideas that make technology more useful for people and communities.",
   ],
 }
 
@@ -60,12 +54,12 @@ export const work = {
   cards: [
     {
       title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+      description: "I build mobile experiences with a focus on useful, approachable interfaces.",
       icons: null,
     },
     {
       title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
+      description: "I create responsive web applications with modern JavaScript tooling.",
       icons: null,
     }
   ],
@@ -75,59 +69,66 @@ export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-        },
-        {
-          icon: faGithub,
-          link: "",
-        },
-      ]
+      title: "Licence Management System",
+      description: "A full-stack licence management application for organizing licence records and workflows.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/licence-management-system",
+      github: "https://github.com/Leulsamson/licence-management-system",
+      demo: "https://licence-management-system-one.vercel.app",
     },
     {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-        },
-        {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-        },
-      ]
+      title: "News Feed Provider",
+      description: "A project for collecting and providing news content through a focused application experience.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/News-Feed-Provider",
+      github: "https://github.com/Leulsamson/News-Feed-Provider",
+    },
+    {
+      title: "Hospital Management System",
+      description: "A web-based system for organizing hospital information and day-to-day management workflows.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/hospital-management-system",
+      github: "https://github.com/Leulsamson/hospital-management-system",
+      demo: "https://hospital-management-system-snowy-nu.vercel.app",
     },
     {
       title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
-      icons: [
-        {
-          icon: faGithub,
-          link: "",
-        },
-      ]
+      description: "This responsive portfolio website for presenting my work, background, and contact links.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/Portfolio",
+      github: "https://github.com/Leulsamson/Portfolio",
+    },
+    {
+      title: "Leulsamson GitHub Profile",
+      description: "Profile configuration and documentation for my GitHub presence.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/Leulsamson",
+      github: "https://github.com/Leulsamson/Leulsamson",
+    },
+    {
+      title: "Utility Damage Reporting System",
+      description: "A reporting system designed to help track and manage utility damage cases.",
+      image: "/smart.jpg",
+      github: "https://github.com/Leulsamson/utility-damage-reporting-system",
+    },
+    {
+      title: "Municipality Land Administration System",
+      description: "A land administration system for managing municipal records and organization workflows.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/municipality-land-administration-system-for-organizations",
+      github: "https://github.com/Leulsamson/municipality-land-administration-system-for-organizations",
+    },
+    {
+      title: "Municipality Land Admin",
+      description: "A Visual Basic land administration system focused on municipal data management.",
+      image: "https://opengraph.githubassets.com/1/Leulsamson/municipality-land-admin",
+      github: "https://github.com/Leulsamson/municipality-land-admin",
     },
   ],
 }
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Contact details will be added soon.",
+  description: "I am open to conversations about software engineering, collaboration, and new opportunities. Find me on GitHub to connect.",
   buttons: [
     {
-      title: "Email Me",
-      link: "",
+      title: "GitHub Profile",
+      link: "https://github.com/Leulsamson",
       isPrimary: true,
-    },
-    {
-      title: "Schedule Meeting",
-      link: "",
-      isPrimary: false,
     },
   ]
 }
@@ -135,35 +136,23 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Leuls | Portfolio",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  title: "Leul Samson | Software Engineer",
+  description: "Software engineering graduate building full-stack web applications and practical digital tools.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "Leuls",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "Leul Samson",
+  description: "Software Engineering Graduate | Full-stack Developer",
   cards: [
     {
       title: "My website",
-      link: "",
-    },
-    {
-      title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
-    },
-    {
-      title: "StarBook App",
-      link: "https://starbook.dev/",
+      link: "https://leulsamson.github.io/portfolio/",
     },
     {
       title: "My GitHub",
-      link: "",
-    },
-    {
-      title: "My LinkedIn",
-      link: "",
+      link: "https://github.com/Leulsamson/",
     },
   ]
 }
