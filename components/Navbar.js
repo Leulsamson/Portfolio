@@ -4,8 +4,23 @@ import Link from 'next/link'
 export const Nav = ({ title, links }) => {
 
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
+  useEffect(() => {
+    const savedTheme = window.localStorage.getItem('portfolio-theme');
+    const darkMode = savedTheme === 'dark';
+    setIsDarkMode(darkMode);
+    document.body.classList.toggle('dark-mode', darkMode);
+  }, []);
+
+  const toggleTheme = () => {
+    const nextDarkMode = !isDarkMode;
+    setIsDarkMode(nextDarkMode);
+    document.body.classList.toggle('dark-mode', nextDarkMode);
+    window.localStorage.setItem('portfolio-theme', nextDarkMode ? 'dark' : 'light');
+  };
 
   return (
     <nav className="navbar navbar-expand-sm navbar-light bg-secondary">
@@ -39,6 +54,14 @@ export const Nav = ({ title, links }) => {
               </Link>
             ))}
           </div>
+          <button
+            type="button"
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {isDarkMode ? 'Light mode' : 'Dark mode'}
+          </button>
         </div>
       </div>
     </nav>

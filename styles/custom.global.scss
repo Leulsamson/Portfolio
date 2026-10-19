@@ -158,6 +158,26 @@ a {
   color: $primary;
 }
 
+.theme-toggle {
+  border: 1px solid #cbd7c8;
+  border-radius: 999px;
+  background: transparent;
+  color: $primary;
+  font-size: .85rem;
+  font-weight: 700;
+  margin: .5rem 0 .5rem 1rem;
+  min-height: 40px;
+  padding: .35rem .8rem;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+  background: $primary;
+  border-color: $primary;
+  color: $light;
+}
+
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -322,7 +342,7 @@ a {
 
 .project-card .btn-outline-primary {
   border-color: rgba(184, 243, 74, .7);
-  color: $light;
+  color: $primary;
 }
 
 .project-card .btn-outline-primary:hover {
@@ -375,6 +395,86 @@ a {
 .footer-bottom {
   border-top: 1px solid #202620;
   color: #687268;
+}
+
+.dark-mode {
+  background: #101412;
+  color: #edf2eb;
+}
+
+.dark-mode .navbar {
+  background: #151b17 !important;
+  border-color: #29352d;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .navbar .nav-link {
+  color: #edf2eb !important;
+}
+
+.dark-mode .navbar .nav-link:hover,
+.dark-mode .navbar .nav-link:focus {
+  color: $accent !important;
+}
+
+.dark-mode .theme-toggle {
+  border-color: #526451;
+  color: #edf2eb;
+}
+
+.dark-mode .theme-toggle:hover,
+.dark-mode .theme-toggle:focus {
+  background: $accent;
+  border-color: $accent;
+  color: #111315;
+}
+
+.dark-mode .hero-section {
+  background:
+    radial-gradient(circle at 12% 15%, rgba(184, 243, 74, .14), transparent 22rem),
+    linear-gradient(135deg, #101412 0%, #1d2820 100%);
+}
+
+.dark-mode .hero-section p,
+.dark-mode .about-content p {
+  color: #c4cec3;
+}
+
+.dark-mode .hero-label,
+.dark-mode .section-label {
+  color: $accent;
+}
+
+.dark-mode .about-section,
+.dark-mode .skill-card,
+.dark-mode .project-card {
+  background: #182019;
+}
+
+.dark-mode .skills-section,
+.dark-mode .projects-section {
+  background: #111712;
+}
+
+.dark-mode .skill-card,
+.dark-mode .project-card {
+  border-color: #304031;
+  color: #edf2eb;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+}
+
+.dark-mode .skill-card h4,
+.dark-mode .project-card h4 {
+  color: #edf2eb !important;
+}
+
+.dark-mode .skill-card p,
+.dark-mode .project-card p {
+  color: #b9c5b8 !important;
+}
+
+.dark-mode .project-card .btn-outline-primary {
+  color: #edf2eb;
 }
 
 .card-image {
