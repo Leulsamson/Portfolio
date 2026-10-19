@@ -35,6 +35,7 @@ export const Projects = ({ title, cards }) => {
 							title={value.title}
 							description={value.description}
 							image={value.image}
+							images={value.images}
 							github={value.github}
 							demo={value.demo} />
 					))}
@@ -47,10 +48,22 @@ export const Projects = ({ title, cards }) => {
 	);
 }
 
-export const Card = ({ title, description, image, github, demo }) => {
+export const Card = ({ title, description, image, images, github, demo }) => {
 	return (
 		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
-			{image && (
+			{images ? (
+				<div className="project-image-grid mb-3">
+					{images.map((projectImage, index) => (
+						<img
+							key={projectImage}
+							className="card-project-image"
+							src={projectImage}
+							alt={`${title} preview ${index + 1}`}
+							loading="lazy"
+						/>
+					))}
+				</div>
+			) : image && (
 				<img className="card-project-image mb-3" src={image} alt={`${title} project preview`} loading="lazy" />
 			)}
 			<h4 className="text-primary">{title}</h4>

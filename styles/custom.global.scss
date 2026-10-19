@@ -148,6 +148,16 @@ a {
   background: $secondary;
 }
 
+.project-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.project-image-grid .card-project-image {
+  height: 110px;
+}
+
 .card-image {
   transition: all .3s;
   border-radius: $card-border-radius;

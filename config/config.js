@@ -103,7 +103,7 @@ export const projects = {
     {
       title: "Utility Damage Reporting System",
       description: "A reporting system designed to help track and manage utility damage cases.",
-      image: "/smart.jpg",
+      images: ["/smart.jpg", "/smart1.jpg"],
       github: "https://github.com/Leulsamson/utility-damage-reporting-system",
     },
     {
