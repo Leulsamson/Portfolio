@@ -412,6 +412,14 @@ a {
   color: #edf2eb;
 }
 
+.dark-mode .text-primary {
+  color: #edf2eb !important;
+}
+
+.dark-mode .text-dark {
+  color: #c4cec3 !important;
+}
+
 .dark-mode .navbar {
   background: #151b17 !important;
   border-color: #29352d;
@@ -448,6 +456,22 @@ a {
 .dark-mode .hero-section p,
 .dark-mode .about-content p {
   color: #c4cec3;
+}
+
+.dark-mode .hero-section .btn-primary,
+.dark-mode .hero-section .btn-outline-primary {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #111315;
+}
+
+.dark-mode .hero-section .btn-primary:hover,
+.dark-mode .hero-section .btn-primary:focus,
+.dark-mode .hero-section .btn-outline-primary:hover,
+.dark-mode .hero-section .btn-outline-primary:focus {
+  background: #111315;
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .dark-mode .hero-label,
