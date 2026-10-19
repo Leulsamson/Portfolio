@@ -6,10 +6,11 @@ const { publicRuntimeConfig } = getConfig()
 
 export const Intro = ({ title, description, image, buttons }) => {
 	return (
-		<div className="bg-secondary py-5 px-5">
-			<div className="container">
+		<div className="hero-section">
+			<div className="container hero-content">
 				<div className=" row align-items-center">
 					<div className="col-sm-6">
+						<p className="hero-label mb-3">Software Engineer</p>
 						<h1 className="text-primary fw-bold display-3">{title}</h1>
 						<p>{description}</p>
 						<div className="text-center">
@@ -40,10 +41,11 @@ export const Intro = ({ title, description, image, buttons }) => {
 
 export const About = ({ title, description }) => {
 	return (
-		<div id="about" className="bg-white py-5 px-5">
+		<div id="about" className="about-section py-5 px-5">
 			<div className="container">
+				<p className="section-label mb-2">Profile</p>
 				<h1 className="text-primary fw-bold">{title}</h1>
-				<div className="px-sm-5">
+				<div className="about-content px-sm-5">
 					{description.map((value, index) => (
 						<p key={index} >{value}</p>
 					))}

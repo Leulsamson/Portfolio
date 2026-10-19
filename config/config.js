@@ -26,7 +26,7 @@ export const navigation = {
 }
 export const intro = {
   title: "Hey, I'm Leul",
-  description: "A software engineering graduate building full-stack web applications and practical digital tools.",
+  description: "Software Engineer building full-stack applications, practical digital tools, and reliable solutions for real-world problems.",
   image: profile.src,
   buttons: [
     {
@@ -45,9 +45,9 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I am a software engineering graduate passionate about full-stack development and modern web technologies. I enjoy turning real-world problems into reliable, approachable software.",
-    "My work spans web applications, management systems, data-driven tools, and developer-focused projects. I value clear interfaces, maintainable code, and learning through hands-on building.",
-    "When I am not coding, I enjoy continuing my learning journey and exploring ideas that make technology more useful for people and communities.",
+    "I am Leul Samson, a Software Engineer with a strong interest in technology and software development. I am highly motivated, hardworking, and focused on building useful software that addresses real-world needs.",
+    "I earned a BSc. in Software Engineering from Injibara University in 2026 with a CGPA of 3.65 and an exit exam result of 86.25%. My education strengthened my foundation in software design, development, databases, and problem solving.",
+    "As a Software Engineer Intern at the Addis Ababa Innovation and Technology Development Bureau, I gathered requirements, analyzed problems, and contributed to practical system solutions. The experience also strengthened my communication, teamwork, adaptability, and professional problem-solving skills.",
   ],
 }
 
@@ -160,14 +160,14 @@ export const contact = {
 export const SEO = {
   // 50 - 60 char  
   title: "Leul Samson | Software Engineer",
-  description: "Software engineering graduate building full-stack web applications and practical digital tools.",
+  description: "Software Engineer building full-stack web applications and practical digital tools.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
   title: "Leul Samson",
-  description: "Software Engineering Graduate | Full-stack Developer",
+  description: "Software Engineer | Full-stack Developer",
   cards: [
     {
       title: "My GitHub",

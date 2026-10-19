@@ -41,7 +41,7 @@ export const Footer = ({ links = [] }) => {
 					<div>
 						<p className="footer-kicker mb-2">LET&apos;S CONNECT</p>
 						<h2 className="text-white fw-bold mb-2">Contact Me</h2>
-						<small className="footer-muted">Leul Samson · Software Engineering Graduate</small>
+						<small className="footer-muted">Leul Samson · Software Engineer</small>
 					</div>
 					<div className="footer-links" aria-label="Contact links">
 						{links.map((value) => (

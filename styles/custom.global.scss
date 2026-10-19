@@ -119,6 +119,7 @@ html {
 
 body {
   margin: 0;
+  background: #f4f6f2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -130,6 +131,115 @@ a {
 .icon-style {
   font-family: $font-family-sans-serif;
   color: $primary;
+}
+
+.navbar {
+  min-height: 72px;
+  border-bottom: 1px solid #e1e7df;
+}
+
+.navbar-brand {
+  color: $primary !important;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+
+.navbar .nav-link {
+  color: #4d564e;
+  font-size: .9rem;
+  font-weight: 700;
+  margin-left: .75rem;
+  transition: color .2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: $primary;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 15%, rgba(184, 243, 74, .25), transparent 22rem),
+    linear-gradient(135deg, #f4f6f2 0%, #e8eee5 100%);
+}
+
+.hero-section h1 {
+  max-width: 700px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  letter-spacing: -.07em;
+  line-height: .95;
+}
+
+.hero-section p {
+  max-width: 600px;
+  color: #4d564e;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.hero-content {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hero-label,
+.section-label {
+  color: #5f725b;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.about-section {
+  background: #ffffff;
+}
+
+.about-section h1,
+.skills-section h1 {
+  letter-spacing: -.04em;
+}
+
+.about-content {
+  max-width: 850px;
+  margin-left: auto;
+}
+
+.about-content p {
+  color: #4c564e;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.skills-section {
+  background: #edf2eb;
+}
+
+.skill-card {
+  height: 100%;
+  border: 1px solid #dce5d9;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(17, 19, 21, .05);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(17, 19, 21, .1);
+}
+
+.skill-card h4 {
+  color: $primary;
+  letter-spacing: -.02em;
+}
+
+.skill-card p {
+  color: #5a655b;
+  line-height: 1.65;
 }
 
 
