@@ -25,9 +25,10 @@ export const Skills = ({ title, cards }) => {
 
 export const Projects = ({ title, cards }) => {
 	return (
-		<div id="projects" className="projects-section py-5 px-3 px-md-5">
-			<div className="container-fluid projects-container">
-				<h1 className="text-light fw-bold">Projects</h1>
+		<div id="projects" className="projects-section py-5 px-5">
+			<div className="container projects-container">
+				<p className="section-label mb-2">Selected work</p>
+				<h1 className="text-primary fw-bold">{title}</h1>
 				<div className="projects-grid">
 					{cards.map((value, index) => (
 						<Card

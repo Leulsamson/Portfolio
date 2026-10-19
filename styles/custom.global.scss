@@ -271,17 +271,15 @@ a {
 }
 
 .projects-section {
-  background:
-    radial-gradient(circle at 85% 10%, rgba(184, 243, 74, .14), transparent 28rem),
-    #0b0d0e;
+  background: #edf2eb;
 }
 
 .projects-section h1 {
-  color: $light !important;
+  letter-spacing: -.04em;
 }
 
 .projects-container {
-  max-width: 1440px;
+  max-width: 1140px;
 }
 
 .projects-grid {
@@ -293,17 +291,27 @@ a {
 .project-card {
   width: 100%;
   min-height: 100%;
-  border: 1px solid rgba(184, 243, 74, .14);
-  background: #171a1b;
-  color: $light;
+  border: 1px solid #dce5d9;
+  border-radius: 18px;
+  background: #ffffff;
+  color: $primary;
+  box-shadow: 0 12px 30px rgba(17, 19, 21, .05);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 38px rgba(17, 19, 21, .1);
 }
 
 .project-card h4 {
-  color: $light !important;
+  color: $primary !important;
+  letter-spacing: -.02em;
 }
 
 .project-card p {
-  color: #d2d8d1 !important;
+  color: #5a655b !important;
+  line-height: 1.65;
 }
 
 .project-card .btn-primary {
