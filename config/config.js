@@ -1,7 +1,7 @@
 
 import profile from './profile.png';
-import { faDocker, faGithub, faLinkedin, faReact, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faBrain, faDatabase, faEnvelope, faMobileScreenButton, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faNodeJs, faReact, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBrain, faCode, faDatabase, faEnvelope, faMobileScreenButton, faPhone, faWrench } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: "Leul",
@@ -55,28 +55,38 @@ export const work = {
   title: "Skills",
   cards: [
     {
-      title: "Full-Stack Web Development",
-      description: "I build responsive applications with React, Next.js, TypeScript, Node.js, and Express, from polished interfaces to dependable APIs.",
+      title: "Programming Languages",
+      description: "Python, JavaScript, TypeScript, Java, PHP, HTML5, and CSS3.",
+      icon: faCode,
+    },
+    {
+      title: "Frontend Development",
+      description: "React, Next.js, and Bootstrap for responsive, accessible, and polished user interfaces.",
       icon: faReact,
     },
     {
-      title: "Backend & Database Systems",
-      description: "I design practical backend systems with PostgreSQL, MySQL, Prisma, SQL Server, authentication, validation, and maintainable data models.",
+      title: "Backend & APIs",
+      description: "Node.js and Express for dependable backend services, REST APIs, authentication, and practical application workflows.",
+      icon: faNodeJs,
+    },
+    {
+      title: "Databases",
+      description: "PostgreSQL, MySQL, MongoDB, and Firebase for structured data, persistence, and application services.",
       icon: faDatabase,
     },
     {
       title: "AI & Machine Learning",
-      description: "I explore machine-learning solutions for real-world problems and continue developing my expertise in AI, data-driven tools, and research.",
+      description: "Python, NumPy, Pandas, Scikit-learn, and H2O.ai for data preprocessing, feature handling, supervised learning, classification, Random Forest, AutoML, model evaluation, and AUC analysis.",
       icon: faBrain,
     },
     {
-      title: "Deployment & Software Delivery",
-      description: "I use Git, Docker, and cloud deployment workflows to ship reliable projects and turn ideas into accessible software.",
-      icon: faDocker,
+      title: "Tools & Technologies",
+      description: "Git, GitHub, Docker, and Visual Studio Code for version control, collaboration, containerized delivery, and productive development.",
+      icon: faWrench,
     },
     {
       title: "Mobile & Desktop App Development",
-      description: "I build mobile and desktop applications with React Native, Flutter, C#, and Visual Basic .NET for practical, cross-platform solutions.",
+      description: "React Native, Flutter, C#, and Visual Basic .NET for practical cross-platform mobile and desktop solutions.",
       icon: faMobileScreenButton,
     }
   ],
