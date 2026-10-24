@@ -15,6 +15,10 @@ export const navigation = {
       link: "#projects",
     },
     {
+      title: "Skills",
+      link: "#skills",
+    },
+    {
       title: "Contact",
       link: "#contact",
     },
