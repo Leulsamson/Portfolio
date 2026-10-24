@@ -4,10 +4,10 @@
   <h1 align="center">Developer's Portfolio ✨</h1>
 
   <p align="center">
-    It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.
+    Leul Samson's personal portfolio website, built to showcase my skills, projects, and experience.
     <br />
     <strong>Site URL / Demo » </strong>
-    <a href="">Your portfolio URL</a>
+    <a href="https://leul-samsons-portfolio.vercel.app/">Leul Samson's Portfolio</a>
     <br />
     <br />
     <a href="">About Me</a>
