@@ -154,7 +154,7 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Leul Samson | Software Engineer",
+  title: "Leul Samson's Portfolio",
   description: "Software Engineer building full-stack web applications and practical digital tools.",
   image: profile.src,
 }

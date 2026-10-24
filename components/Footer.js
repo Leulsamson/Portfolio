@@ -55,7 +55,7 @@ export const Footer = ({ links = [] }) => {
 					</div>
 				</div>
 				<div className="footer-bottom mt-4 pt-3">
-					<small>&copy; {new Date().getFullYear()} Leul Samson. Built with care.</small>
+					<small>&copy; {new Date().getFullYear()} Leul Samson.</small>
 				</div>
 			</div>
 		</footer>
