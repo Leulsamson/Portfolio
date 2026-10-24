@@ -285,6 +285,11 @@ a {
   box-shadow: 0 12px 30px rgba(17, 19, 21, .05);
 }
 
+.tech-stack-container h1 {
+  margin-bottom: 1.5rem;
+  letter-spacing: -.04em;
+}
+
 .tech-stack-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));

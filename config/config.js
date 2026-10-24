@@ -19,6 +19,10 @@ export const navigation = {
       link: "#skills",
     },
     {
+      title: "Tech Stack",
+      link: "#tech-stack",
+    },
+    {
       title: "Contact",
       link: "#contact",
     },

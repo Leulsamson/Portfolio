@@ -21,8 +21,8 @@ export const Skills = ({ title, cards, techStack }) => {
 							link={value.link} />
 					))}
 				</div>
-				<div className="tech-stack-container mt-5">
-					<p className="section-label mb-3">Tech Stack</p>
+				<div id="tech-stack" className="tech-stack-container mt-5">
+					<h1 className="text-primary fw-bold">Tech Stack</h1>
 					<div className="tech-stack-grid" aria-label="Technologies used">
 						{techStack.map((technology) => (
 							<div className="tech-stack-item" key={technology.name}>
@@ -45,7 +45,6 @@ export const Projects = ({ title, cards }) => {
 	return (
 		<div id="projects" className="projects-section py-5 px-5">
 			<div className="container projects-container">
-				<p className="section-label mb-2">Selected work</p>
 				<h1 className="text-primary fw-bold">{title}</h1>
 				<div className="projects-grid">
 					{cards.map((value, index) => (
