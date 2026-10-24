@@ -89,7 +89,7 @@ export const work = {
     },
     {
       title: "AI & Machine Learning",
-      description: "Python, NumPy, Pandas, Scikit-learn, and H2O.ai for data preprocessing, feature handling, supervised learning, classification, Random Forest, AutoML, model evaluation, and AUC analysis.",
+      description: "Python, NumPy, Pandas, Scikit-learn, and H2O.ai for data analysis, supervised learning, classification, and model evaluation.",
       icon: faBrain,
     },
     {
