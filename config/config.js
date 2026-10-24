@@ -1,7 +1,7 @@
 
 import profile from './profile.png';
 import { faDocker, faGithub, faLinkedin, faReact, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faBrain, faDatabase, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBrain, faDatabase, faEnvelope, faMobileScreenButton, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: "Leul",
@@ -73,6 +73,11 @@ export const work = {
       title: "Deployment & Software Delivery",
       description: "I use Git, Docker, and cloud deployment workflows to ship reliable projects and turn ideas into accessible software.",
       icon: faDocker,
+    },
+    {
+      title: "Mobile & Desktop App Development",
+      description: "I build mobile and desktop applications with React Native, Flutter, C#, and Visual Basic .NET for practical, cross-platform solutions.",
+      icon: faMobileScreenButton,
     }
   ],
 }
