@@ -1,8 +1,5 @@
 import React from 'react';
-import getConfig from 'next/config'
 import Link from 'next/link'
-
-const { publicRuntimeConfig } = getConfig()
 
 export const Intro = ({ title, description, image, buttons }) => {
 	return (

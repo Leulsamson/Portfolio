@@ -1,13 +1,10 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import getConfig from 'next/config'
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { Footer } from '../components/Footer';
 import { links, SEO, } from '../config/config';
 import { Header } from '../components/Header';
-
-const { publicRuntimeConfig } = getConfig()
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);

@@ -58,9 +58,6 @@ export const Projects = ({ title, cards }) => {
 							demo={value.demo} />
 					))}
 				</div>
-				{/* <div className="text-center">
-					<button type="button" className="btn btn-outline-light">See More</button>
-				</div> */}
 			</div>
 		</div>
 	);

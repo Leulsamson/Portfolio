@@ -29,9 +29,6 @@ const nextConfig = {
   reactStrictMode: true,
   basePath: basePath,
   assetPrefix: basePath,
-  publicRuntimeConfig: {
-    basePath: basePath,
-  },
   async redirects() {
     return [
       {

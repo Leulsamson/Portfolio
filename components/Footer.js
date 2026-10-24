@@ -2,37 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link'
 
-export const Contact = ({ title, description, buttons }) => {
-	return (
-		<div id="contact" className="bg-white py-5 px-5">
-			<div className="container">
-				<h1 className="text-primary fw-bold">{title}</h1>
-				<div className="px-sm-5">
-					<p>{description}</p>
-					<div className="">
-						{buttons.map((value, index) => (
-							(value.isPrimary) ?
-								<Link key={index} href={value.link}>
-									<a className="btn btn-primary my-1 mx-3">
-										{value.icon && <FontAwesomeIcon icon={value.icon} className="me-2" aria-hidden="true" />}
-										{value.title}
-									</a>
-								</Link>
-								:
-								<Link key={index} href={value.link}>
-									<a className="btn btn-outline-primary my-1 mx-3">
-										{value.icon && <FontAwesomeIcon icon={value.icon} className="me-2" aria-hidden="true" />}
-										{value.title}
-									</a>
-								</Link>
-						))}
-					</div>
-				</div>
-			</div>
-		</div>
-	);
-}
-
 export const Footer = ({ links = [] }) => {
 	return (
 		<footer id="contact" className="site-footer py-5 px-4">
