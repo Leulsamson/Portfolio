@@ -25,7 +25,7 @@ export const navigation = {
   ],
 }
 export const intro = {
-  title: "Hey, I'm Leul",
+  title: "Leul Samson",
   description: "Software Engineer building full-stack applications, practical digital tools, and reliable solutions for real-world problems.",
   image: profile.src,
   buttons: [
