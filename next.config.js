@@ -32,6 +32,15 @@ const nextConfig = {
   publicRuntimeConfig: {
     basePath: basePath,
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        destination: 'https://leul-samsons-portfolio.vercel.app/',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
