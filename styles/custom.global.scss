@@ -407,6 +407,16 @@ a {
   background: #050606;
   color: #aeb7ad;
   border-top: 1px solid rgba(184, 243, 74, .2);
+  padding-top: 5rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.site-footer h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.site-footer .footer-muted {
+  font-size: 1rem;
 }
 
 .footer-kicker {
@@ -430,12 +440,12 @@ a {
   display: inline-flex;
   align-items: center;
   gap: .45rem;
-  min-height: 44px;
-  padding: .6rem .8rem;
+  min-height: 50px;
+  padding: .75rem 1rem;
   border: 1px solid #2a332a;
   border-radius: 999px;
   color: #e9f0e8;
-  font-size: .9rem;
+  font-size: 1rem;
   transition: background-color .2s, border-color .2s, color .2s;
 }
 
