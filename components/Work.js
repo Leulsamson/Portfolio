@@ -4,7 +4,9 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link'
 
-export const Skills = ({ title, cards }) => {
+const DEVICON_BASE_URL = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons';
+
+export const Skills = ({ title, cards, techStack }) => {
 	return (
 		<div id="skills" className="skills-section py-5 px-5">
 			<div className="container">
@@ -18,6 +20,21 @@ export const Skills = ({ title, cards }) => {
 							icon={value.icon}
 							link={value.link} />
 					))}
+				</div>
+				<div className="tech-stack-container mt-5">
+					<p className="section-label mb-3">Tech Stack</p>
+					<div className="tech-stack-grid" aria-label="Technologies used">
+						{techStack.map((technology) => (
+							<div className="tech-stack-item" key={technology.name}>
+								<img
+									src={`${DEVICON_BASE_URL}/${technology.icon}`}
+									alt={`${technology.name} icon`}
+									loading="lazy"
+								/>
+								<span>{technology.name}</span>
+							</div>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

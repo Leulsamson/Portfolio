@@ -65,6 +65,11 @@ export const work = {
       icon: faReact,
     },
     {
+      title: "Mobile & Desktop App Development",
+      description: "React Native, Flutter, C#, and Visual Basic .NET for practical cross-platform mobile and desktop solutions.",
+      icon: faMobileScreenButton,
+    },
+    {
       title: "Backend & APIs",
       description: "Node.js and Express for dependable backend services, REST APIs, authentication, and practical application workflows.",
       icon: faNodeJs,
@@ -84,13 +89,33 @@ export const work = {
       description: "Git, GitHub, Docker, and Visual Studio Code for version control, collaboration, containerized delivery, and productive development.",
       icon: faWrench,
     },
-    {
-      title: "Mobile & Desktop App Development",
-      description: "React Native, Flutter, C#, and Visual Basic .NET for practical cross-platform mobile and desktop solutions.",
-      icon: faMobileScreenButton,
-    }
   ],
 }
+
+export const techStack = [
+  { name: "Python", icon: "python/python-original.svg" },
+  { name: "JavaScript", icon: "javascript/javascript-original.svg" },
+  { name: "TypeScript", icon: "typescript/typescript-original.svg" },
+  { name: "Java", icon: "java/java-original.svg" },
+  { name: "PHP", icon: "php/php-original.svg" },
+  { name: "HTML5", icon: "html5/html5-original-wordmark.svg" },
+  { name: "CSS3", icon: "css3/css3-original-wordmark.svg" },
+  { name: "React", icon: "react/react-original-wordmark.svg" },
+  { name: "Next.js", icon: "nextjs/nextjs-original.svg" },
+  { name: "Bootstrap", icon: "bootstrap/bootstrap-original-wordmark.svg" },
+  { name: "Node.js", icon: "nodejs/nodejs-original-wordmark.svg" },
+  { name: "Express", icon: "express/express-original.svg" },
+  { name: "PostgreSQL", icon: "postgresql/postgresql-original-wordmark.svg" },
+  { name: "MySQL", icon: "mysql/mysql-original-wordmark.svg" },
+  { name: "MongoDB", icon: "mongodb/mongodb-original-wordmark.svg" },
+  { name: "Firebase", icon: "firebase/firebase-plain.svg" },
+  { name: "Flutter", icon: "flutter/flutter-original.svg" },
+  { name: "C#", icon: "csharp/csharp-original.svg" },
+  { name: "Git", icon: "git/git-original.svg" },
+  { name: "GitHub", icon: "github/github-original.svg" },
+  { name: "Docker", icon: "docker/docker-original-wordmark.svg" },
+  { name: "VS Code", icon: "vscode/vscode-original.svg" },
+]
 
 export const projects = {
   title: "Projects",
