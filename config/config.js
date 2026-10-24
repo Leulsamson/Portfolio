@@ -47,7 +47,7 @@ export const about = {
   description: [
     "I am Leul Samson, a Software Engineer with a strong interest in technology and software development. I am highly motivated, hardworking, and focused on building useful software that addresses real-world needs.",
     "I earned a BSc. in Software Engineering from Injibara University in 2026 with a CGPA of 3.65 and an exit exam result of 86.25%. My education strengthened my foundation in software design, development, databases, and problem solving.",
-    "As a Software Engineer Intern at the Addis Ababa Innovation and Technology Development Bureau, I gathered requirements, analyzed problems, and contributed to practical system solutions. The experience also strengthened my communication, teamwork, adaptability, and professional problem-solving skills.",
+    "I work as a freelance Software Engineer, helping individuals and organizations turn their ideas into practical, reliable software. I design and develop responsive web applications, backend systems, and digital tools tailored to each client's needs, while maintaining clear communication throughout the development process.",
   ],
 }
 
@@ -108,7 +108,7 @@ export const projects = {
     {
       title: "Municipality Land Administration System",
       description: "A land administration system for managing municipal records and organization workflows.",
-      image: "/municipality-1.png",
+      image: "/municipality-2.png",
       github: "https://github.com/Leulsamson/municipality-land-administration-system-for-organizations",
     },
   ],
