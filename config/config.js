@@ -1,7 +1,7 @@
 
 import profile from './profile.png';
-import { faGithub, faLinkedin, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faDocker, faGithub, faLinkedin, faReact, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBrain, faDatabase, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: "Leul",
@@ -57,22 +57,22 @@ export const work = {
     {
       title: "Full-Stack Web Development",
       description: "I build responsive applications with React, Next.js, TypeScript, Node.js, and Express, from polished interfaces to dependable APIs.",
-      icons: null,
+      icon: faReact,
     },
     {
       title: "Backend & Database Systems",
       description: "I design practical backend systems with PostgreSQL, MySQL, Prisma, SQL Server, authentication, validation, and maintainable data models.",
-      icons: null,
+      icon: faDatabase,
     },
     {
       title: "AI & Machine Learning",
       description: "I explore machine-learning solutions for real-world problems and continue developing my expertise in AI, data-driven tools, and research.",
-      icons: null,
+      icon: faBrain,
     },
     {
       title: "Deployment & Software Delivery",
       description: "I use Git, Docker, and cloud deployment workflows to ship reliable projects and turn ideas into accessible software.",
-      icons: null,
+      icon: faDocker,
     }
   ],
 }

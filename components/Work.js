@@ -15,6 +15,7 @@ export const Skills = ({ title, cards }) => {
 							key={index}
 							title={value.title}
 							description={value.description}
+							icon={value.icon}
 							link={value.link} />
 					))}
 				</div>
@@ -49,7 +50,7 @@ export const Projects = ({ title, cards }) => {
 	);
 }
 
-export const Card = ({ title, description, image, images, github, demo }) => {
+export const Card = ({ title, description, image, images, github, demo, icon }) => {
 	return (
 		<div className={`card py-3 px-3 my-3 card-work ${github || demo ? 'project-card' : 'skill-card'}`}>
 			{images ? (
@@ -66,6 +67,11 @@ export const Card = ({ title, description, image, images, github, demo }) => {
 				</div>
 			) : image && (
 				<img className="card-project-image mb-3" src={image} alt={`${title} project preview`} loading="lazy" />
+			)}
+			{icon && (
+				<div className="skill-icon mb-3" aria-hidden="true">
+					<FontAwesomeIcon icon={icon} />
+				</div>
 			)}
 			<h4 className="text-primary">{title}</h4>
 			<p className="text-dark">{description}</p>
