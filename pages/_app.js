@@ -1,5 +1,6 @@
 import '../styles/custom.global.scss'
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -7,7 +8,12 @@ function MyApp({ Component, pageProps }) {
     document.body.classList.toggle('dark-mode', darkMode);
   }, []);
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics />
+    </>
+  )
 }
 
 export default MyApp
