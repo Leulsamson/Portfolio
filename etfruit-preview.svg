@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="16" fill="#0F1712"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="#162019" stroke="#2B3D30" stroke-width="1.5"/>
+  <!-- Top bar -->
+  <rect x="28" y="28" width="744" height="52" rx="12" fill="#1B2820"/>
+  <circle cx="58" cy="54" r="6" fill="#4ADE80"/>
+  <circle cx="80" cy="54" r="6" fill="#FACC15"/>
+  <circle cx="102" cy="54" r="6" fill="#F87171"/>
+  <text x="132" y="59" fill="#E5ECE6" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" letter-spacing="0.02em">EtFruit · ERPNext Enterprise Stack</text>
+  <rect x="646" y="40" width="106" height="28" rx="14" fill="#243829" stroke="#4D7C0F" stroke-width="1"/>
+  <text x="699" y="59" text-anchor="middle" fill="#B8F34A" font-family="monospace" font-size="12" font-weight="700">DOCKERIZED</text>
+
+  <!-- Architecture Nodes -->
+  <!-- Frontend -->
+  <rect x="56" y="112" width="208" height="118" rx="10" fill="#1D2B22" stroke="#354C3B" stroke-width="1.5"/>
+  <text x="76" y="144" fill="#B8F34A" font-family="monospace" font-size="11" font-weight="700">NGINX · PORT 8080</text>
+  <text x="76" y="172" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Frappe Frontend</text>
+  <text x="76" y="198" fill="#9FB0A3" font-family="system-ui, sans-serif" font-size="12">Reverse proxy &amp; static assets</text>
+
+  <!-- Backend -->
+  <rect x="296" y="112" width="208" height="118" rx="10" fill="#1D2B22" stroke="#4D7C0F" stroke-width="1.5"/>
+  <text x="316" y="144" fill="#B8F34A" font-family="monospace" font-size="11" font-weight="700">GUNICORN · PORT 8000</text>
+  <text x="316" y="172" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">ERPNext Core</text>
+  <text x="316" y="198" fill="#9FB0A3" font-family="system-ui, sans-serif" font-size="12">Inventory, Sales &amp; Accounting</text>
+
+  <!-- Websocket -->
+  <rect x="536" y="112" width="208" height="118" rx="10" fill="#1D2B22" stroke="#354C3B" stroke-width="1.5"/>
+  <text x="556" y="144" fill="#B8F34A" font-family="monospace" font-size="11" font-weight="700">NODE.JS · PORT 9000</text>
+  <text x="556" y="172" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Socket.IO Realtime</text>
+  <text x="556" y="198" fill="#9FB0A3" font-family="system-ui, sans-serif" font-size="12">Live notifications &amp; events</text>
+
+  <!-- Connectors -->
+  <path d="M264 171 L296 171" stroke="#B8F34A" stroke-width="2" stroke-dasharray="4 3"/>
+  <path d="M504 171 L536 171" stroke="#B8F34A" stroke-width="2" stroke-dasharray="4 3"/>
+  <path d="M400 230 L400 278" stroke="#6B8572" stroke-width="2"/>
+
+  <!-- Workers & Data Layer -->
+  <rect x="56" y="278" width="332" height="156" rx="10" fill="#19241D" stroke="#2F4234" stroke-width="1.5"/>
+  <text x="76" y="310" fill="#9FB0A3" font-family="monospace" font-size="11" font-weight="700">BACKGROUND WORKERS</text>
+  <rect x="76" y="328" width="90" height="36" rx="6" fill="#233328"/>
+  <text x="121" y="350" text-anchor="middle" fill="#E5ECE6" font-family="monospace" font-size="11">queue-short</text>
+  <rect x="176" y="328" width="90" height="36" rx="6" fill="#233328"/>
+  <text x="221" y="350" text-anchor="middle" fill="#E5ECE6" font-family="monospace" font-size="11">queue-long</text>
+  <rect x="276" y="328" width="92" height="36" rx="6" fill="#233328"/>
+  <text x="322" y="350" text-anchor="middle" fill="#E5ECE6" font-family="monospace" font-size="11">scheduler</text>
+  <text x="76" y="402" fill="#9FB0A3" font-family="system-ui, sans-serif" font-size="13">Automated cron jobs, batch processing &amp; async tasks</text>
+
+  <rect x="412" y="278" width="332" height="156" rx="10" fill="#19241D" stroke="#2F4234" stroke-width="1.5"/>
+  <text x="432" y="310" fill="#9FB0A3" font-family="monospace" font-size="11" font-weight="700">DATA &amp; CACHE SERVICES</text>
+  <rect x="432" y="328" width="140" height="36" rx="6" fill="#233328"/>
+  <text x="502" y="350" text-anchor="middle" fill="#B8F34A" font-family="monospace" font-size="11">MariaDB / Sites</text>
+  <rect x="584" y="328" width="140" height="36" rx="6" fill="#233328"/>
+  <text x="654" y="350" text-anchor="middle" fill="#E5ECE6" font-family="monospace" font-size="11">Redis Cache/Queue</text>
+  <text x="432" y="402" fill="#9FB0A3" font-family="system-ui, sans-serif" font-size="13">Multi-container Compose orchestration for EtFruit</text>
+</svg>
