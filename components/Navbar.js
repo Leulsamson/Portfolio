@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export const Nav = ({ title, links }) => {
-
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -25,19 +24,19 @@ export const Nav = ({ title, links }) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-secondary">
+    <nav className="navbar navbar-expand-md sticky-top">
       <div className="container">
         <Link href="/">
-          <a className="navbar-brand">
-            <span className="">{title}</span>
+          <a className="navbar-brand d-flex align-items-center gap-2">
+            <span className="brand-dot" aria-hidden="true" />
+            <span>{title}</span>
           </a>
         </Link>
         <button
           className="custom-toggler navbar-toggler"
-          type="button" data-toggle="collapse"
-          data-target="#navbarsExample09"
-          aria-controls="navbarsExample09"
-          aria-expanded={!isNavCollapsed ? true : false}
+          type="button"
+          aria-controls="mainNavbar"
+          aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
           onClick={handleNavCollapse}
         >
@@ -46,18 +45,23 @@ export const Nav = ({ title, links }) => {
 
         <div
           className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}
-          id="navbarsExample09"
+          id="mainNavbar"
         >
-          <div className="navbar-nav">
+          <div className="navbar-nav ms-md-auto align-items-md-center">
             {links.map((value, index) => (
-              <Link key={index} href={value.link} >
-                <a className="nav-link">{value.title}</a>
+              <Link key={index} href={value.link}>
+                <a
+                  className="nav-link"
+                  onClick={() => setIsNavCollapsed(true)}
+                >
+                  {value.title}
+                </a>
               </Link>
             ))}
           </div>
           <button
             type="button"
-            className="theme-toggle ms-sm-auto"
+            className="theme-toggle ms-md-3"
             onClick={toggleTheme}
             aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
             title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
@@ -68,4 +72,4 @@ export const Nav = ({ title, links }) => {
       </div>
     </nav>
   );
-}
+};

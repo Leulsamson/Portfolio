@@ -6,9 +6,9 @@
   "license": "MIT",
   "private": true,
   "author": {
-    "name": "Leuls",
-    "email": "",
-    "url": ""
+    "name": "Leul Samson",
+    "email": "leuls4345@gmail.com",
+    "url": "https://leul-samsons-portfolio.vercel.app/"
   },
   "scripts": {
     "prebuild": "node scripts/favicons.js",
